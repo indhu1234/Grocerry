@@ -53,7 +53,7 @@ public class ProductController {
 	
 	@RequestMapping(value="/admin/deleteproduct/{id}")
 	public String deleteProduct(HttpServletRequest request, @PathVariable int id){
-		String rootDirectory=request.getServletContext().getRealPath("/");
+		String rootDirectory=request.getServletPath();
 		Path path=Paths.get(rootDirectory + "/WEB-INF/resources/images/"+id+".png");
 		if(Files.exists(path)){
 			try {
@@ -93,7 +93,7 @@ public class ProductController {
     	}
     	System.out.println(product.getProductname());
     	productService.saveOrUpdateProduct(product); //insert and update
-    	String rootDirectory=request.getServletContext().getRealPath("/");
+    	String rootDirectory=request.getServletPath();
     	System.out.println(rootDirectory);
     	Path path=Paths.get(rootDirectory + "/WEB-INF/resources/images/"+product.getId()+".png");
     	MultipartFile prodImage=product.getImage();//uploaded image [jpeg,gif,..]
