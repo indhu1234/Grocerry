@@ -27,9 +27,9 @@ public class Product {
 	private String productDescription;
 	
 	private int quantity;
-	@Min(value=10,message="Minimum price is 10")
 	
-	private double price;
+	@Min(value=10,message="Minimum price is 10")
+		private double price;
 	
 	@ManyToOne
 	private Category category;
