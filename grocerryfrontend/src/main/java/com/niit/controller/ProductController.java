@@ -95,7 +95,7 @@ public class ProductController {
     	productService.saveOrUpdateProduct(product); //insert and update
     	String rootDirectory=request.getServletPath();
     	System.out.println(rootDirectory);
-    	Path path=Paths.get(rootDirectory + "/WEB-INF/resources/images/"+product.getId()+".png");
+    	Path path=Paths.get(rootDirectory + "/WEB-INF/resources/images/"+product.getId()+".jpg");
     	MultipartFile prodImage=product.getImage();//uploaded image [jpeg,gif,..]
     	try {
 			prodImage.transferTo(new File(path.toString()));

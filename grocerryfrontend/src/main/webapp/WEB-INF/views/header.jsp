@@ -55,6 +55,15 @@
 			<li><a href="${productForm }">Add Product</a></li>
 			</security:authorize>
 			
+			<c:url value="/category" var="category"></c:url>
+			<security:authorize access="hasRole('ROLE_ADMIN')">
+			<li><a href="${category }">Manage Category</a></li>
+			</security:authorize>
+			
+			<c:url value="/supplier" var="supplier"></c:url>
+			<security:authorize access="hasRole('ROLE_ADMIN')">
+			<li><a href="${supplier }">Manage Supplier</a></li>
+			</security:authorize>
 						
 			<c:url value="/all/getallproducts" var="productsUrl"></c:url>
 			<li><a href="${productsUrl }">Browse all products</a>
