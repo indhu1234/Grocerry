@@ -60,10 +60,10 @@ public class CategoryDAOImpl implements CategoryDAO
 		}
 	}
 
-	public Category getCategory(int categoryId) 
+	public Category getCategory(int id) 
 	{
 		Session session=sessionFactory.openSession();
-		Category category=(Category)session.get(Category.class,categoryId);
+		Category category=(Category)session.get(Category.class,id);
 		session.close();
 		return category;
 	}

@@ -11,7 +11,7 @@
 <body>
 <h4>Product Details</h4><br>
 <form action="<c:url value='/cart/addtocart/${product.id }'></c:url>">
-<img src='<c:url value='/resources/images/${product.id }.png'></c:url>' height="70" width="70" alt="Image not Available ">
+<img src='<c:url value='/resources/images/${product.id }.jpg'></c:url>' height="70" width="70" alt="Image not Available ">
 
 <pre>
 <b>Product Name:</b>${product.productname}<br>

@@ -33,10 +33,10 @@
 						</center>
 						</td>
 				</tr>
-</form>
 
 			</table>
 			</br></br>
+		</form>
 			<table align="center" border="1">
 				<tr>
 					<td>Supplier ID</td>

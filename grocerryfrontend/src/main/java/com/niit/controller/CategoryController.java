@@ -33,10 +33,10 @@ public class CategoryController
 	}
 	
 	@RequestMapping(value="/InsertCategory",method=RequestMethod.POST)
-	public String saveCategoryDetail(@RequestParam("catName")String categoryName,@RequestParam("catDesc") String categoryDesc,Model m)
+	public String saveCategoryDetail(@RequestParam("catName")String categoryname,@RequestParam("catDesc") String categoryDesc,Model m)
 	{
 		Category category=new Category();
-		category.setCategoryname(categoryName);
+		category.setCategoryname(categoryname);
 		category.setCategoryDesc(categoryDesc);
 		categoryDAO.addCategory(category);
 		
@@ -46,10 +46,10 @@ public class CategoryController
 		return "category";
 	}
 	
-	@RequestMapping(value="/deleteCategory/{categoryId}")
-	public String deleteCategory(@PathVariable("categoryId")int categoryId,Model m)
+	@RequestMapping(value="/deleteCategory/{id}")
+	public String deleteCategory(@PathVariable("id")int id,Model m)
 	{
-		Category category=categoryDAO.getCategory(categoryId);
+		Category category=categoryDAO.getCategory(id);
 		categoryDAO.deleteCategory(category);
 		
 		List<Category> listCategories=categoryDAO.listCategories();
@@ -58,19 +58,19 @@ public class CategoryController
 		return "category";
 	}
 	
-	@RequestMapping(value="/editCategory/{categoryId}")
-	public String editCategory(@PathVariable("categoryId")int categoryId,Model m)
+	@RequestMapping(value="/editCategory/{id}")
+	public String editCategory(@PathVariable("id")int id,Model m)
 	{
-		Category category=categoryDAO.getCategory(categoryId);
+		Category category=categoryDAO.getCategory(id);
 		m.addAttribute(category);
 		return "updatecategory";
 	}
 	
 	@RequestMapping(value="/UpdateCategory",method=RequestMethod.POST)
-	 public String updateCategory(Model m,@RequestParam("catId")int categoryID,@RequestParam("catName")String categoryName,@RequestParam("catDesc")String categoryDesc)
+	 public String UpdateCategory(Model m,@RequestParam("catId")int id,@RequestParam("catName")String categoryname,@RequestParam("catDesc")String categoryDesc)
 	 {
-		 Category category=categoryDAO.getCategory(categoryID);
-		 category.setCategoryname(categoryName);
+		 Category category=categoryDAO.getCategory(id);
+		 category.setCategoryname(categoryname);
 		 category.setCategoryDesc(categoryDesc);
 		 categoryDAO.updateCategory(category);
 		 List<Category> listCategories=categoryDAO.listCategories();
