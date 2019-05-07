@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img class="third-slide home-image " src="resources/images/image3.jpg" alt="Third slide"height="2000px" width="1500px">
+                    <img class="third-slide home-image " src="resources/images/pro.jpg" alt="Third slide"height="2000px" width="1500px">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1></h1>
@@ -48,7 +48,7 @@
                     </div>
                 </div>
                  <div class="item">
-                    <img class="forth-slide home-image " src="resources/images/image4.jpg" alt="forth slide">
+                    <img class="forth-slide home-image " src="resources/images/image6.jpg" alt="forth slide">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1></h1>

@@ -7,9 +7,9 @@
 <meta charset="ISO-8859-1">
 </head>
 <body>
-	<h2 algin="center">Category Page</h2>
+	<h2 align="center">Category Page</h2>
 	
-	<form action="<c:url value ='/updateCategory'/>"  method="post">
+	<form action="<c:url value ='/UpdateCategory'/>"  method="post">
 		<table align="center">
 			<tr>
 				<td colspan="2">CategoryInfo</td>
@@ -17,24 +17,26 @@
 			<tr>
 				<td>CategoryID</td>
 				<td><input type="text" name="catId"
-					value="${category.id}" /></td>
+					value="${categorydata.id}" /></td>
 			</tr>
 			<tr>
 				<td>CategoryName</td>
 				<td><input type="text" name="catName"
-					value="${category.categoryname}" /></td>
+					value="${categorydata.categoryname}" /></td>
 			</tr>
 			<tr>
 				<td>CategoryDesc</td>
 				<td><input type="text" name="catDesc"
-					value="${category.categoryDesc}" /></td>
+					value="${categorydata.categoryDesc}" /></td>
 			</tr>
 
+
 			<tr>
-						<input type="submit" value="Save Category" /></td>
-				</center>
+						<td><input type="submit" value="Update Category" /></td> </tr>
+				
+			</table>
 				</form>
-		</table>
+		
 
 
 	

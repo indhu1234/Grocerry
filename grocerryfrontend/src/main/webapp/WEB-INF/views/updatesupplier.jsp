@@ -7,7 +7,7 @@
 <meta charset="ISO-8859-1">
 </head>
 <body>
-	<h2 algin="center">Supplier Page</h2>
+	<h2 align="center">Supplier Page</h2>
 	
 	<form action="<c:url value ='/UpdateSupplier'/>"  method="post">
 		<table align="center">
@@ -17,25 +17,25 @@
 			<tr>
 				<td>SupplierID</td>
 				<td><input type="text" name="supId"
-					value="${supplier.supplierId}" /></td>
+					value="${supplierdata.supplierId}" /></td>
 			</tr>
 			<tr>
 				<td>SupplierName</td>
 				<td><input type="text" name="supName"
-					value="${supplier.supplierName}" /></td>
+					value="${supplierdata.supplierName}" /></td>
 			</tr>
 			<tr>
 				<td>SupplierDesc</td>
 				<td><input type="text" name="supDesc"
-					value="${supplier.supplierDesc}" /></td>
+					value="${supplierdata.supplierDesc}" /></td>
 			</tr>
 
 			<tr>
-						<input type="submit" value="Save Supplier" /></td>
-				</center>
-				</form>
+						<td><input type="submit" value="Update Supplier" /></td>
+              </tr>
+				
 		</table>
-
+      </form>
 
 	
 </body>

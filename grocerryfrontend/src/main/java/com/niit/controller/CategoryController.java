@@ -62,8 +62,12 @@ public class CategoryController
 	public String editCategory(@PathVariable("id")int id,Model m)
 	{
 		Category category=categoryDAO.getCategory(id);
-		m.addAttribute(category);
-		return "updatecategory";
+         categoryDAO.updateCategory(category);
+		
+		List<Category> listCategories=categoryDAO.listCategories();
+		m.addAttribute("categorydata", category);
+		
+				return "updatecategory";
 	}
 	
 	@RequestMapping(value="/UpdateCategory",method=RequestMethod.POST)

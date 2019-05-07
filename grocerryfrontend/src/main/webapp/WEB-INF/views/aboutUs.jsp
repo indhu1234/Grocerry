@@ -9,9 +9,34 @@
 <%@include file="header.jsp" %>
 <body>
 <pre>
-<b>About Us Page</b>
+<h2><b>About US</b></h2>
+<h3>
+           We are providing Best Quality of Grocerry Products. </h3>
+  <b>Services</b>
+          1. Fast Home delivery
+          2. Online Purchase
+          3. Cash on Home Delivery
+          
+   <b>Available Products</b>
+           !. Home made Food Items
+           2. Natural Products
+           3. Nuts Items
+           4. Dry Fruits
+           5. Rice Items
+           6. Vegetables
+           7. Fruits
+           8. Cooking Items
+           9. Kitchen Items
+           10.Snacks
+           11.Cosmetics
+           12.Pooja Items
+           13.Soaps
+           14.Washing Items
+           15.Note Books
+           16.Stationary Items
 
-
+<br><b>All Products are in Good Quality with low Cost</b>
+<br> <b>Visit my Page!!! Get Good Experience</b>
 
 
 

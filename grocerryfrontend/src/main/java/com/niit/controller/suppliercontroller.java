@@ -60,7 +60,9 @@ public class suppliercontroller
 	public String editSupplier(@PathVariable("supplierId")int supplierId,Model m)
 	{
 		Supplier supplier=supplierDao.getSupplier(supplierId);
-		m.addAttribute(supplier);
+		supplierDao.updateSupplier(supplier);
+		 List< Supplier> listSuppliers=supplierDao.listSuppliers();
+		m.addAttribute("supplierdata",supplier);
 		return "updatesupplier";
 	}
 	
