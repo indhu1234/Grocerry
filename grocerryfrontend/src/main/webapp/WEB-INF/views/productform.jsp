@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link type="text/css" rel="stylesheet" href='<c:url value="/resources/css/product.css"></c:url>'>
 <title>Quality Grocerry Products</title>
 </head>
 <body>

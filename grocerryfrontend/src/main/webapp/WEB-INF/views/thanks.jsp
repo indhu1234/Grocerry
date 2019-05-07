@@ -8,6 +8,8 @@
 <title>Quality Grocerry Shop</title>
 </head>
 <body>
-<h2>Thank You!! Visit Again</h2>
+<center><img src="/WEB-INF/resources/images/thanks.jpg" /></center>
+<br>
+<center><h2> Visit Again!!!</h2></center>
 </body>
 </html>

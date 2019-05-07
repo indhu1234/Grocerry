@@ -75,5 +75,6 @@ public class CategoryDAOImpl implements CategoryDAO
 		session.close();
 		return listCategories;
 	}
+
 	
 }
