@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Quality Grocerry Products</title>
+<title>Shopping Products</title>
 </head>
 <body>
 <div >
@@ -44,5 +44,8 @@ Total Price : ${grandTotal }
 </div>
 
 </div>
+
+
+<%@ include file ="footer.jsp"%>
 </body>
 </html>

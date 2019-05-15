@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Quality Grocerry Products</title>
+<title>Shopping Products</title>
 </head>
 <body>
 
@@ -52,4 +52,5 @@ Enter Shipping Address
 </form:form>
 
 </body>
+<%@ include file ="footer.jsp"%>
 </html>

@@ -1,10 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <%@ include file="header.jsp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>List of Products</title>
+<title>Insert title here</title>
 <script>
 	$(document).ready(function() {
 		var searchCondition = '${searchCondition}';
@@ -18,6 +20,11 @@
 </script>
 </head>
 <body>
+<div class="navbar-header">
+		<c:url value="resources/images/ast1.jpg" var="url"></c:url>
+		<a class="navbar-brand" href=""><img src="${url }" alt="logo" height="50px" width="50px"></a>
+			</div>
+		
 <div class="container">
 
 <table class ="table table-striped">
@@ -58,5 +65,7 @@
      
 </table>
 </div>
+
+<%@ include file ="footer.jsp"%>
 </body>
 </html>

@@ -17,7 +17,7 @@
 
 			<table align="center">
 				<tr>
-					<td colspan="2">Category Info</td>
+					<td colspan="2">Category Information</td>
 				</tr>
 				<tr>
 					<td>Category Name</td>
@@ -27,6 +27,7 @@
 					<td>Category Desc</td>
 					<td><input type="text" name="catDesc" /></td>
 				</tr>
+												
 				<tr>
 					<td colspan="2"><center>
 							<input type="submit" value="Save Category" />
@@ -60,6 +61,8 @@
 			</table>
 
 		</form>
+		
+		<%@ include file ="footer.jsp"%>
 </body>	
 					
 </html>

@@ -7,17 +7,15 @@
     uri="http://www.springframework.org/security/tags" %>
 <%@ page isELIgnored ="false" %>
 
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <link rel="stylesheet" href="<c:url value='/resources/css/login.css'></c:url>">
- 
-  
+ <link rel="stylesheet" href="<c:url value='/resources/css/registration.css'></c:url>">
+  <link rel="stylesheet" href="<c:url value='/resources/css/navbar.css'></c:url>">
+  <link rel="stylesheet" href="<c:url value='/resources/css/formerror.css'></c:url>">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
       
        <!-- JQuery -->
@@ -25,8 +23,10 @@
     <script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
 
     <link href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css" rel="stylesheet">
+<html>
+<head>
  
- <title>Grocerry Products</title>
+ <title>Shopping Products</title>
 </head>
 <body>
 <nav class="navbar navbar-default">
@@ -57,13 +57,14 @@
 			
 			<c:url value="/category" var="category"></c:url>
 			<security:authorize access="hasRole('ROLE_ADMIN')">
-			<li><a href="${category }">Manage Category</a></li>
+			<li><a href="${category}">Manage Category</a>			
 			</security:authorize>
 			
 			<c:url value="/supplier" var="supplier"></c:url>
 			<security:authorize access="hasRole('ROLE_ADMIN')">
-			<li><a href="${supplier }">Manage Supplier</a></li>
+			<li><a href="${supplier}">Manage Supplier</a>			
 			</security:authorize>
+			
 						
 			<c:url value="/all/getallproducts" var="productsUrl"></c:url>
 			<li><a href="${productsUrl }">Browse all products</a>
@@ -91,5 +92,7 @@
 			
 		</div>
 		</nav>
+		
+		
 </body>
 </html>

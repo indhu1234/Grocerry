@@ -5,16 +5,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Quality Grocerry Online Shopping</title>
+<title>Online Shopping</title>
 </head>
 <body>
- <center>Login Page</center> <br>
-  	${error }<br>
-  	${msg }<br>
+<center>
+  Login Page<br>
   	
   	<form action="<c:url value='/j_spring_security_check'></c:url>" method="post">
   	
-  	<table align="center">
+  	<table>
   		<tr>
   			<td>Enter Username</td>
   			<td><input type="text" name="j_username"></td>
@@ -25,16 +24,20 @@
   			<td><input type="password" name="j_password"></td>
   		</tr>
   		<tr>
-  		<td><input type="submit" value="Login"></td>
+  		<td><input type="submit" value="submit"></td>
   		</tr>
   	
   	
   	</table>
   	</form>
   
-  
+  ${error }<br>
+  	${msg }<br>
+  	
+  </center>
   
   
   
 </body>
+<%@ include file ="footer.jsp"%>
 </html>
